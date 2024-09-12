@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from '../component/navbar';;  // Import your Navbar component
-import Footer from '../component/footer'  // Import your Footer component
+import Navbar from '../component/navbar';  // Import your Navbar component
+import Footer from '../component/footer';  // Import your Footer component
 import Image from 'next/image'; // If you need to use images
 
 export default function Contact() {
@@ -69,7 +69,7 @@ export default function Contact() {
                   <textarea
                     className="w-full p-4 mt-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     placeholder="Enter your message"
-                    rows="5"
+                    rows={5} // Fix: use curly braces to pass as number
                   ></textarea>
                 </div>
                 <button
